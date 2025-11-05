@@ -17,6 +17,3 @@ def esPrimo(numero):
 
     # Si el bucle termina sin encontrar divisores, el número es primo
     return True
-
-            
- 

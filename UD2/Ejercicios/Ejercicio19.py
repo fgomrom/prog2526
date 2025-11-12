@@ -10,8 +10,14 @@ print(f"A == D: {lista_a == lista_d}") # False (la longitud importa)
 
 #TODO: Algoritmo que dice si dos arrays son iguales
 def iguales(lista1, lista2):
-    
-    
-    #TODO: retorna un valor boleano
-
-
+    #TODO: Comparo la logitud
+    n = len(lista1)
+    m = len(lista2)
+    if n != m:
+        return False
+    else:
+        #TODO: Recorro el array
+        for i in range(n):
+            if lista1[i] != lista2[i]:
+                return False
+    return True

@@ -1,0 +1,13 @@
+función iguales(lista1, lista2) devuelve booleano
+	n = longitud(lista1)
+	m = longitud(lista2)
+	si m != n entonces
+		return Falso
+	si no:
+		Desde i = 0 hasta n:
+			si lista1[i] != lista2[i]:
+				return Falso
+			Finsi
+		FinDesde
+	Finsi
+	return True

@@ -6,10 +6,17 @@ public class Ciudad {
 		Persona juan;
 		// Inicializo juan con un nuevo objeto de tipo Persona
 		juan = new Persona();
+		juan.nombre = "Juan";
+		juan.edad = 20;
+		juan.estatura = 1.80f;
 		
 		Persona jose = new Persona();
 		Persona miguel = new Persona();
 		
+		// Imprimer referencia
 		System.out.println(juan);
+		// Imprimir: Hola soy [juan] y tengo [20] años
+		System.out.println("Hola soy " + juan.nombre + " y tengo " + juan.edad + " años");
+		
 	}
 }

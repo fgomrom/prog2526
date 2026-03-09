@@ -16,8 +16,9 @@ public class HolaMundo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       int a = 'a';
-        System.out.println(a);
+        Empleado e = new Empleado();
+        System.out.println(e.nombre);
+        System.out.println(e.salario);
     }
     
 }

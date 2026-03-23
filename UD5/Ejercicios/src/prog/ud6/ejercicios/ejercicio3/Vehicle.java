@@ -1,5 +1,7 @@
 package prog.ud6.ejercicios.ejercicio3;
 
+import java.util.Date;
+
 public abstract class Vehicle implements Maintenance {
 	private String licensePlate;
 	private String brand;
@@ -12,6 +14,7 @@ public abstract class Vehicle implements Maintenance {
 		this.brand = brand;
 		this.year = year;
 		this.fuelType = fuelType;
+		vehicleCount ++;
 	}
 	
 	public Vehicle() {
@@ -26,7 +29,7 @@ public abstract class Vehicle implements Maintenance {
 	
 	@Override
 	public String nextMaintanceDate() {
-		return String.valueOf(year); //Ejemplo
+		return String.valueOf(new Date()); //Ejemplo
 	}
 	
 	public int getTotalVehicles() {
@@ -63,6 +66,16 @@ public abstract class Vehicle implements Maintenance {
 	protected static void setVehicleCount(int vehicleCount) {
 		Vehicle.vehicleCount = vehicleCount;
 	}
+
+	@Override
+	public String toString() {
+		return "Vehicle [licensePlate=" + licensePlate + ", brand=" + brand + ", year=" + year + ", fuelType="
+				+ fuelType + "]";
+	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		
+	}
 	
 }

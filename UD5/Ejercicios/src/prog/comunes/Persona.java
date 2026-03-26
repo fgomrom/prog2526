@@ -15,6 +15,13 @@ public class Persona {
 	public Persona() {
 		
 	}
+	
+	public void setEdad(int edad) {
+		if (edad < 0) {
+			throw new EdadInvalidaException("Edad negativa");
+		}
+		this.edad = edad;
+	}
 
 	@Override
 	public String toString() {

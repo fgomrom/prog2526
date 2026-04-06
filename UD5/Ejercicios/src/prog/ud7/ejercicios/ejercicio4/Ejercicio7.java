@@ -2,12 +2,14 @@ package prog.ud7.ejercicios.ejercicio4;
 
 import java.util.Scanner;
 
+import prog.ud7.ejercicios.ejercicio5.NumeroRepetido;
+
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
 		try {
 			introduceEnteros();
-		} catch (IllegalArgumentException e) {
+		} catch (NumeroRepetido e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 		} finally {
@@ -29,7 +31,7 @@ public class Ejercicio7 {
 		
 		//Invocar método y si devuelve true lanzar excepción
 		if (estaEnLista(lista, num))
-			throw new IllegalArgumentException("Número repetido");
+			throw new NumeroRepetido("Número repetido");
 		
 		for (int e: lista) {
 			System.out.println(e);

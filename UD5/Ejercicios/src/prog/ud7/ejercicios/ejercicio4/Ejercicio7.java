@@ -10,8 +10,7 @@ public class Ejercicio7 {
 		try {
 			introduceEnteros();
 		} catch (NumeroRepetido e) {
-			e.printStackTrace();
-			System.out.println(e.getMessage());
+			
 		} finally {
 			System.out.println("Fin");
 		}

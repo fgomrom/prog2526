@@ -1,4 +1,4 @@
-package prog.ud8.ejemplos.listas;
+package prog.ud8.ejercicios;
 
 import java.util.ArrayList;
 import java.util.List;

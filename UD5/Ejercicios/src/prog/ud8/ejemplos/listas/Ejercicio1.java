@@ -30,7 +30,25 @@ public class Ejercicio1 {
 		persona.setNombre("Paco");
 		//En una línea
 		((Persona)personas.getFirst()).setNombre("Paco");
-		
+		//6
+		int indiceCentral = personas.size()/2 - 1;
+		personas.remove(indiceCentral);
+		System.out.println(personas);
+		//8
+		for(int i = 0; i < personas.size(); i++) {
+			System.out.println(personas.get(i));
+		}
+		//9
+		Persona ale = new Persona("Ale");
+		personas.add(ale);
+		if (personas.contains(ale))
+			System.out.println("La persona: " + ale + " está en la lista.");
+		System.out.println(personas);
+		//10
+		personas.clear();
+		if (personas.isEmpty())
+			System.out.println("Está vacía.");
+		System.out.println(personas);
 	}
 
 }

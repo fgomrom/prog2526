@@ -15,7 +15,7 @@ public class Ejercicio2 {
 		
 		Persona fran = new Persona("Fran");
 		Persona ana = new Persona("Ana");
-		personas.add(fran);
+		personas.add("fran");
 		personas.add(new Persona("Juan"));
 		personas.add(ana);
 		personas.add(new Persona("Juan"));

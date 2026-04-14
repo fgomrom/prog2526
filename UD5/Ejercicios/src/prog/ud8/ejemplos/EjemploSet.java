@@ -8,6 +8,18 @@ import java.util.TreeSet;
 public class EjemploSet {
 
 	public static void main(String[] args) {
+		// HashSet
+		Set<Integer> hash = new HashSet<>();
+		hash.add(1);
+		hash.add(0);
+		hash.add(-1);
+		System.out.println(hash);
+		
+		
+		
+		
+		
+		
 		// Imagina que son cromos
         Set<String> miColeccion = new HashSet<>(); 
         

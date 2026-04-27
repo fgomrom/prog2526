@@ -1,6 +1,5 @@
 package prog.comunes;
 
-
 public class Persona implements Comparable<Persona>{
 	// Atributos
 	private String nombre;

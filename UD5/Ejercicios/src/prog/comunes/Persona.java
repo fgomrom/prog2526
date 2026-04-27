@@ -1,6 +1,7 @@
 package prog.comunes;
 
-public class Persona implements Comparable{
+
+public class Persona implements Comparable<Persona>{
 	// Atributos
 	private String nombre;
 	private String apellido;
@@ -65,7 +66,7 @@ public class Persona implements Comparable{
 	}
 
 	@Override
-	public int compareTo (Object p) {
-		return this.getNombre().compareTo(((Persona)p).getNombre());
+	public int compareTo (Persona p) {
+		return this.getNombre().compareTo(p.getNombre());
 	}
 }

@@ -6,7 +6,7 @@ public class EjemploNullPointerException {
 
 	public static void main(String[] args) {
 		Persona fran = null;
-		System.out.println(fran.nombre);
+		System.out.println(fran.getNombre());
 		System.out.println("Hol");
 	}
 

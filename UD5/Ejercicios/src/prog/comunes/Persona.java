@@ -1,10 +1,21 @@
 package prog.comunes;
 
-public class Persona implements Comparable<Persona>{
+import java.io.Serializable;
+import java.time.LocalDate;
+
+public class Persona implements Comparable<Persona>, Serializable{
+	private static final long serialVersionUID = 1L;
+	
 	// Atributos
 	private String nombre;
 	private String apellido;
 	private int edad;
+	private LocalDate fecha;
+	// No se serializa (aunque sea serializable)
+    private transient String password;
+    // No serializable (Object no implementa Serializable)
+    // Debe ser transient para evitar error
+    private transient Object conexion;
 	
 	public Persona(String nombre, int edad) {
 		this.nombre = nombre;
@@ -19,8 +30,17 @@ public class Persona implements Comparable<Persona>{
 		this.nombre = nombre;
 	}
 	
-	public Persona(String nombre, String apellido, int edad) {
+	public Persona(String nombre, String apellido, int edad, LocalDate fecha, String password, Object conexion) {
 		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.fecha = fecha;
+		this.password = password;
+		this.conexion = conexion;
+	}
+
+	public Persona(String nombre, String apellido, int edad) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;

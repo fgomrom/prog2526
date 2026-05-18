@@ -1,0 +1,19 @@
+<!-- XML de ejemplo-->
+<Catalogo>
+    <Libro id="bk101">
+        <Autor>Garghentini, Davide</Autor>
+        <Titulo>XML Developer's Guide</Titulo>
+        <Genero>Computer</Genero>
+        <Precio>44.95</Precio>
+        <FechaPublicacion>2000-10-01</FechaPublicacion>
+        <Descripcion>A in-depth look at creating applications with XML.</Descripcion>
+    </Libro>
+    <Libro id="bk102">
+        <Autor>Garcia, Debra</Autor>
+        <Titulo>Midnight Rain</Titulo>
+        <Genero>Fantasy</Genero>
+        <Precio>5.95</Precio>
+        <FechaPublicacion>2000-12-16</FechaPublicacion>
+        <Descripcion>A former architect battles corporate zombies.</Descripcion>
+    </Libro>
+</Catalogo>

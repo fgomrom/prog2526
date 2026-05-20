@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<videojuego>
+    <pantalla resolucion="1920x1080">true</pantalla>
+    <audio volumen="80">false</audio>
+</videojuego>

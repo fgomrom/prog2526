@@ -1,4 +1,4 @@
-package prog.ud10.ejercicios;
+package prog.ud10.ejercicios.ejercicio4;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

@@ -3,8 +3,10 @@ package prog.ud10.ejercicios;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -42,6 +44,8 @@ public class EventoMusical implements Serializable {
 		this.nombre = nombre;
 		this.fecha = fecha;
 		this.recaudacion = recaudacion;
+		this.genero = genero;
+		this.artistas = new ArrayList<>();
 	}
 
 	public String getNombre() {

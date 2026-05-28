@@ -2,6 +2,9 @@ package prog.ud10.ejercicios;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Artista implements Serializable {
 	
 	private static final long serialVersionUID = 1L;

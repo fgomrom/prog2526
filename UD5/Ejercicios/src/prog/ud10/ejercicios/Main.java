@@ -26,14 +26,24 @@ public class Main {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb:$objectdb/db/eventos.odb");
 		EntityManager em = emf.createEntityManager();
 		
-		em.getTransaction().begin();
+		//em.getTransaction().begin();
 		
-		em.persist(conciertoEstopa);
+		/*em.persist(estopa);
+		em.persist(conciertoEstopa);*/
 		
-		em.getTransaction().commit();
+		//em.getTransaction().commit();
+		
+		// Ejercicio 5
+		EventoMusical concierto = em.find(EventoMusical.class, 31);
+		System.out.println(concierto.getNombre());
+		
+		// Consulta
+		
 		
 		em.close();
 		emf.close();
+		
+		System.out.println("Finalizado correctamente");
 		
 	}
 

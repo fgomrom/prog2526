@@ -44,6 +44,11 @@ public class EventoMusical implements Serializable {
 		this.recaudacion = recaudacion;
 	}
 
+	public EventoMusical(String string, Date date, BigDecimal bigDecimal,
+			prog.ud10.ejercicios.EventoMusical.Genero pop) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getNombre() {
 		return nombre;
 	}

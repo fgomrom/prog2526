@@ -5,3 +5,9 @@
 /UD5/JavaApplication6/nbproject/private/
 /UD5/JavaApplication6/build/
 /UD5/JavaApplication7/nbproject/private/
+
+# Eclipse Core      
+.project
+
+# JDT-specific (Eclipse Java Development Tools)     
+.classpath

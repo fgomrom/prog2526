@@ -11,3 +11,5 @@
 
 # JDT-specific (Eclipse Java Development Tools)     
 .classpath
+/.classpath
+UD5/Ejercicios/.classpath

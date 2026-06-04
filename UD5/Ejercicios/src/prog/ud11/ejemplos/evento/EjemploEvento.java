@@ -3,25 +3,35 @@ package prog.ud11.ejemplos.evento;
 import java.awt.Button;
 import java.awt.FlowLayout;
 import java.awt.Frame;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class EjemploEvento {
-
-	public static void main(String[] args) {
-
-		Frame ventana = new Frame("Eventos");
-		ventana.setSize(300, 150);
-		ventana.setLayout(new FlowLayout());
+public class EjemploEvento extends Frame{
+	
+	EjemploEvento() {
+		setSize(300, 150);
+		setLayout(new FlowLayout());
 
 		Button miBoton = new Button("Click aquí");
 
-		ventana.add(miBoton);
+		add(miBoton);
+		
+//		ActionListener escuchadorBoton = new MiListener();
+//		miBoton.addActionListener(escuchadorBoton);
+		
+		miBoton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Botón pulsado!");
+			}
+		});
 
-		ActionListener miListener = new MiListener();
+		setVisible(true);
+	}
 
-		miBoton.addActionListener(miListener);
-
-		ventana.setVisible(true);
+	public static void main(String[] args) {
+		new EjemploEvento();
+		
 	}
 
 }
